@@ -10,13 +10,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device makefile.
 $(call inherit-product, device/xiaomi/rubyx/device.mk)
 
-# Inherit some common AlphaDroid stuff.
-$(call inherit-product, vendor/alpha/config/common_full_phone.mk)
+# Inherit some common LineageOS stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Enable animation override to fix lag on fewer mediatek devices
 PERF_ANIM_OVERRIDE := true
 
-PRODUCT_NAME := alpha_rubyx
+PRODUCT_NAME := lineage_rubyx
 PRODUCT_DEVICE := rubyx
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi
@@ -29,22 +29,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildFingerprint=Redmi/ruby_global/ruby:14/UP1A.260206.001/OS2.0.11.0.UMOMIXM:user/release-keys \
     SystemName=ruby_global \
     SystemDevice=ruby
-
-# Device config
-TARGET_HAS_UDFPS := false
-TARGET_ENABLE_BLUR := false
-TARGET_EXCLUDES_AUDIOFX := true
-TARGET_FACE_UNLOCK_SUPPORTED := true
-
-# Build Config
-TARGET_BUILD_PACKAGE := 3
-TARGET_INCLUDE_PIXEL_LAUNCHER := true
-TARGET_SUPPORTS_QUICK_TAP := false
-TARGET_SUPPORTS_CALL_RECORDING := true
-TARGET_INCLUDE_STOCK_ARCORE := false
-TARGET_INCLUDE_LIVE_WALLPAPERS := false
-TARGET_SUPPORTS_GOOGLE_RECORDER := false
-
-# Maintainer
-ALPHA_BUILD_TYPE := Official
-ALPHA_MAINTAINER := YagizErdemir
