@@ -67,6 +67,7 @@ debug.sf.enable_hwc_vds=0
 debug.sf.enable_transaction_tracing=false
 debug.sf.predict_hwc_composition_strategy=0
 debug.sf.treat_170m_as_sRGB=1
+persist.sys.activity_anim_perf_override=true
 persist.vendor.sys.pq.disp.mi.soft.brightness=1
 ro.hardware.egl=meow
 ro.hardware.hwcomposer=mtk_common
