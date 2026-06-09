@@ -43,8 +43,9 @@
         "900000",
         "740000",
         "650000",
-        "500000",
+        "500000"
       ],
+      "DefaultIndex": 15,
       "ResetOnInit": true
     },
     {
@@ -90,8 +91,9 @@
         "1040000",
         "910000",
         "740000",
-        "650000",
+        "650000"
       ],
+      "DefaultIndex": 15,
       "ResetOnInit": true
     },
     {
@@ -154,6 +156,7 @@
         "15",
         "0"
       ],
+      "DefaultIndex": 5,
       "ResetOnInit": true
     },
     {
@@ -171,6 +174,7 @@
         "10",
         "0"
       ],
+      "DefaultIndex": 9,
       "ResetOnInit": true
     },
     {
@@ -180,6 +184,7 @@
         "100",
         "0"
       ],
+      "DefaultIndex": 1,
       "ResetOnInit": true
     },
     {
@@ -189,6 +194,7 @@
         "1",
         "-1"
       ],
+      "DefaultIndex": 1,
       "ResetOnInit": true
     },
     {
@@ -198,6 +204,7 @@
         "1",
         "0"
       ],
+      "DefaultIndex": 1,
       "ResetOnInit": true
     },
     {
