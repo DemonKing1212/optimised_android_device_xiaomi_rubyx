@@ -4,7 +4,6 @@
       "Name": "CPULittleClusterMaxFreq",
       "Path": "/sys/devices/system/cpu/cpufreq/policy0/scaling_max_freq",
       "Values": [
-        "-1",
         "2000000",
         "1903000",
         "1800000",
@@ -45,7 +44,6 @@
         "740000",
         "650000",
         "500000",
-        "-1"
       ],
       "ResetOnInit": true
     },
@@ -53,7 +51,6 @@
       "Name": "CPUBigClusterMaxFreq",
       "Path": "/sys/devices/system/cpu/cpufreq/policy6/scaling_max_freq",
       "Values": [
-        "-1",
         "2600000",
         "2400000",
         "2275000",
@@ -94,7 +91,6 @@
         "910000",
         "740000",
         "650000",
-        "-1"
       ],
       "ResetOnInit": true
     },
@@ -246,7 +242,7 @@
       "PowerHint": "INTERACTION",
       "Node": "CPULittleClusterMaxFreq",
       "Duration": 800,
-      "Value": "-1"
+      "Value": "2000000"
     },
     {
       "PowerHint": "INTERACTION",
@@ -258,7 +254,7 @@
       "PowerHint": "INTERACTION",
       "Node": "CPUBigClusterMaxFreq",
       "Duration": 800,
-      "Value": "-1"
+      "Value": "2600000"
     },
     {
       "PowerHint": "INTERACTION",
@@ -306,7 +302,7 @@
       "PowerHint": "LAUNCH",
       "Node": "CPUBigClusterMaxFreq",
       "Duration": 2000,
-      "Value": "-1"
+      "Value": "2600000"
     },
     {
       "PowerHint": "LAUNCH",
@@ -318,7 +314,7 @@
       "PowerHint": "LAUNCH",
       "Node": "CPULittleClusterMaxFreq",
       "Duration": 2000,
-      "Value": "-1"
+      "Value": "2000000"
     },
     {
       "PowerHint": "LAUNCH",
