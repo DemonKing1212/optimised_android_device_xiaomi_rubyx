@@ -377,7 +377,7 @@
       "PowerHint": "EXPENSIVE_RENDERING",
       "Node": "GPUBlockBoost",
       "Duration": 0,
-      "Value": "50"
+      "Value": "60"
     },
     {
       "PowerHint": "EXPENSIVE_RENDERING",
