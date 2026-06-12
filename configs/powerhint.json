@@ -136,7 +136,7 @@
       "Values": [
         "100",
         "80",
-        "70",
+        "60",
         "50",
         "30",
         "0",
@@ -329,7 +329,7 @@
       "PowerHint": "LAUNCH",
       "Node": "GPUBlockBoost",
       "Duration": 2000,
-      "Value": "70"
+      "Value": "80"
     },
     {
       "PowerHint": "LAUNCH",
