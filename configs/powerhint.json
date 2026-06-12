@@ -187,6 +187,16 @@
       "DefaultIndex": 1,
       "ResetOnInit": true
     },
+     {
+      "Name": "DRAMOppMin",
+      "Path": "/proc/perfmgr/boost_ctrl/dram_ctrl/ddr",
+      "Values": [
+        "1",
+        "-1"
+      ],
+      "DefaultIndex": 1,
+      "ResetOnInit": true
+    },
     {
       "Name": "SchedBoost",
       "Path": "/proc/perfmgr/boost_ctrl/eas_ctrl/sched_boost",
@@ -330,6 +340,12 @@
       "Node": "GPUBlockBoost",
       "Duration": 2000,
       "Value": "80"
+    },
+    {
+      "PowerHint": "LAUNCH",
+      "Node": "DRAMOppMin",
+      "Duration": 2000,
+      "Value": "1"
     },
     {
       "PowerHint": "LAUNCH",
