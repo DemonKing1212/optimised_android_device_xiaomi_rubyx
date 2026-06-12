@@ -359,13 +359,13 @@
       "PowerHint": "EXPENSIVE_RENDERING",
       "Node": "GPUSchedPeriod",
       "Duration": 0,
-      "Value": "0"
+      "Value": "50"
     },
     {
       "PowerHint": "EXPENSIVE_RENDERING",
       "Node": "GPUDVFSInterval",
       "Duration": 0,
-      "Value": "0"
+      "Value": "50"
     },
     {
       "PowerHint": "EXPENSIVE_RENDERING",
