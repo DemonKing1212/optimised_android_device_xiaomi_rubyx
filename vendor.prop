@@ -59,6 +59,20 @@ vendor.connsys.driver.ready=no
 # ConsumerIr
 ro.hardware.consumerir=common
 
+# Dex2oat
+dalvik.vm.dex2oat-cpu-set=0,1,2,3,4,5
+dalvik.vm.dex2oat-threads=6
+dalvik.vm.image-dex2oat-cpu-set=0,1,2,3,4,5
+dalvik.vm.image-dex2oat-threads=6
+dalvik.vm.dex2oat-filter=speed
+dalvik.vm.image-dex2oat-filter=speed
+dalvik.vm.dexopt.secondary=true
+persist.bg.dexopt.enable=true
+pm.dexopt.install=speed-profile
+pm.dexopt.bg-dexopt=speed-profile
+pm.dexopt.boot=verify
+pm.dexopt.first-boot=quicken
+
 # Display
 debug.mediatek.appgamepq_compress=1
 debug.sf.enable_gl_backpressure=0
@@ -131,6 +145,15 @@ ro.vendor.audio.device.dbcom=dolby_common
 ro.vendor.dolby.dax.version=DAX3_3.6.0.12_r1
 ro.vendor.audio.dolby.dax.support=true
 
+# Battery Saving
+persist.cust.tel.eons=1
+persist.vendor.log.tel_log_ctrl=0
+ro.vendor.mtk_log_hide_gps=1
+ro.config.hw_power_saving=true
+persist.vendor.mtk.aee.filter=0
+persist.vendor.mtk.aee.mode=4
+ro.vendor.aee.enforcing=no
+
 # DRM
 ro.netflix.bsp_rev=MTK6877-33678-1
 
@@ -192,6 +215,7 @@ persist.radio.multisim.config=dsds
 persist.vendor.md_c2k_cap_dep_check=0
 persist.vendor.ims_support=1
 persist.vendor.mims_support=2
+persist.vendor.mtk.ct_volte_support=3
 persist.vendor.mtk_sim_switch_policy=2
 persist.vendor.radio.dynamic_sar=1
 persist.vendor.radio.fd.counter=150
@@ -236,6 +260,7 @@ telephony.lteOnCdmaDevice=1
 import /vendor/etc/rsc/${ro.boot.hwc}/ro.prop
 
 # IMS
+persist.vendor.mtk.dynamic_ims_switch=1
 persist.vendor.anr.enhancement=0
 persist.vendor.vilte_support=1
 persist.vendor.mtk.volte.enable=1
@@ -246,6 +271,7 @@ persist.vendor.viwifi_support=1
 persist.vendor.vonr_setting_support=1
 ro.vendor.md_auto_setup_ims=1
 ro.vendor.mtk_data_config=1
+persist.vendor.mtk.wfc_support=1
 
 # Perf
 ro.vendor.perf.framepacing.enable=1
