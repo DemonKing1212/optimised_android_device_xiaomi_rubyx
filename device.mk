@@ -62,7 +62,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     MtkInCallService \
-    XiaomiDolby
+    LunarisDolby
 
 PRODUCT_PACKAGES += \
     libdynproc:32 \
