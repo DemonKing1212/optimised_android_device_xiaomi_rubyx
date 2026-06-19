@@ -309,7 +309,7 @@
       "PowerHint": "INTERACTION",
       "Node": "CPULittleClusterMinFreq",
       "Duration": 800,
-      "Value": "1903000"
+      "Value": "1703000"
     },
     {
       "PowerHint": "INTERACTION",
@@ -339,7 +339,7 @@
       "PowerHint": "INTERACTION",
       "Node": "GPUBlockBoost",
       "Duration": 800,
-      "Value": "70"
+      "Value": "50"
     },
     {
       "PowerHint": "INTERACTION",
@@ -387,19 +387,19 @@
       "PowerHint": "LAUNCH",
       "Node": "TAUclampMin",
       "Duration": 2000,
-      "Value": "100"
+      "Value": "80"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "CPULittleClusterMinFreq",
       "Duration": 2000,
-      "Value": "1903000"
+      "Value": "1800000"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "CPUBigClusterMinFreq",
       "Duration": 2000,
-      "Value": "2400000"
+      "Value": "2275000"
     },
     {
       "PowerHint": "LAUNCH",
@@ -411,7 +411,7 @@
       "PowerHint": "LAUNCH",
       "Node": "FGUclampMin",
       "Duration": 2000,
-      "Value": "80"
+      "Value": "60"
     },
     {
       "PowerHint": "LAUNCH",
@@ -423,7 +423,7 @@
       "PowerHint": "LAUNCH",
       "Node": "GPUBlockBoost",
       "Duration": 2000,
-      "Value": "80"
+      "Value": "70"
     },
     {
       "PowerHint": "LAUNCH",
@@ -489,7 +489,7 @@
       "PowerHint": "EXPENSIVE_RENDERING",
       "Node": "TAUclampMin",
       "Duration": 0,
-      "Value": "80"
+      "Value": "70"
     },
     {
       "PowerHint": "EXPENSIVE_RENDERING",
@@ -507,7 +507,7 @@
       "PowerHint": "EXPENSIVE_RENDERING",
       "Node": "GPUBlockBoost",
       "Duration": 0,
-      "Value": "80"
+      "Value": "70"
     },
     {
       "PowerHint": "EXPENSIVE_RENDERING",
