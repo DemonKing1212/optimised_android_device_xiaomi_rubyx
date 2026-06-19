@@ -415,7 +415,7 @@
             "PowerHint": "LAUNCH",
             "Node": "FGUclampMin",
             "Duration": 2000,
-            "Value": "80"
+            "Value": "100"
         },
         {
             "PowerHint": "LAUNCH",
