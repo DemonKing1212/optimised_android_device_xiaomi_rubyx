@@ -65,7 +65,6 @@ BOARD_KERNEL_CMDLINE := \
     androidboot.tee_type=2 \
     cgroup.memory=nokmem
 
-BOARD_KERNEL_CMDLINE += cgroup_disable=memory
 BOARD_KERNEL_CMDLINE += androidboot.init_fatal_reboot_target=recovery
 
 BOARD_MKBOOTIMG_ARGS := --base $(BOARD_KERNEL_BASE)
