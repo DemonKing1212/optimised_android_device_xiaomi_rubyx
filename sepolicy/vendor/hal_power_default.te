@@ -12,8 +12,6 @@ allow hal_power_default proc_cpufreq:file rw_file_perms;
 
 allow hal_power_default sysfs_ged:dir search;
 allow hal_power_default sysfs_ged:file rw_file_perms;
-
-allow system_server proc_irq:dir search;
 allow hal_power_default self:perf_event cpu;
 
 allow hal_power_default cpu_dma_latency_device:file rw_file_perms;
