@@ -140,13 +140,14 @@
             "Path": "/dev/cpuctl/foreground/cpu.uclamp.min",
             "Values": [
                 "100",
+                "80",
                 "60",
                 "50",
                 "30",
                 "15",
                 "0"
             ],
-            "DefaultIndex": 3,
+            "DefaultIndex": 4,
             "ResetOnInit": true
         },
         {
@@ -408,19 +409,19 @@
             "PowerHint": "LAUNCH",
             "Node": "CPULittleClusterMinFreq",
             "Duration": 2000,
-            "Value": "1703000"
+            "Value": "1903000"
         },
         {
             "PowerHint": "LAUNCH",
             "Node": "FGUclampMin",
             "Duration": 2000,
-            "Value": "60"
+            "Value": "80"
         },
         {
             "PowerHint": "LAUNCH",
             "Node": "TAUclampMin",
             "Duration": 2000,
-            "Value": "80"
+            "Value": "90"
         },
         {
             "PowerHint": "LAUNCH",
@@ -432,13 +433,13 @@
             "PowerHint": "LAUNCH",
             "Node": "GPUDVFSMargin",
             "Duration": 2000,
-            "Value": "75"
+            "Value": "45"
         },
         {
             "PowerHint": "LAUNCH",
             "Node": "GPUDVFSLoadingStep",
             "Duration": 2000,
-            "Value": "16"
+            "Value": "15"
         },
         {
             "PowerHint": "LAUNCH",
