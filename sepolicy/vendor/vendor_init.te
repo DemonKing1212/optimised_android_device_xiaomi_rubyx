@@ -5,3 +5,5 @@ set_prop(vendor_init, vendor_mtk_audio_prop)
 set_prop(vendor_init, vendor_mtk_pq_prop)
 rw_dir_file(vendor_init, sysfs_leds)
 rw_dir_file(vendor_init, sysfs_ged)
+allow init proc_sched_migration_cost_ns:file write;
+set_prop(vendor_init, vendor_mtk_wfc_serv_prop)
