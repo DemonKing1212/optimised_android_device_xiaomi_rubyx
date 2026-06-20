@@ -12,5 +12,3 @@ rw_dir_file(mtk_hal_camera, sysfs_leds)
 
 get_prop(mtk_hal_camera, vendor_camera_prop)
 set_prop(mtk_hal_camera, vendor_camera_prop)
-allow mtk_hal_camera sysfs_fpsgo:file rw_file_perms;
-allow mtk_hal_camera sysfs_fpsgo:dir search;
