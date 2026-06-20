@@ -238,16 +238,6 @@
       "ResetOnInit": true
     },
     {
-      "Name": "SchedBoost",
-      "Path": "/proc/perfmgr/boost_ctrl/eas_ctrl/sched_boost",
-      "Values": [
-        "1",
-        "0"
-      ],
-      "DefaultIndex": 1,
-      "ResetOnInit": true
-    },
-    {
       "Name": "CCIMode",
       "Path": "/proc/cpufreq/cpufreq_cci_mode",
       "Values": [
@@ -343,12 +333,6 @@
     },
     {
       "PowerHint": "INTERACTION",
-      "Node": "SchedBoost",
-      "Duration": 800,
-      "Value": "1"
-    },
-    {
-      "PowerHint": "INTERACTION",
       "Node": "GPUSchedMode",
       "Duration": 800,
       "Value": "1"
@@ -381,7 +365,7 @@
       "PowerHint": "INTERACTION",
       "Node": "GPUDVFSLoadingStep",
       "Duration": 800,
-      "Value": "4"
+      "Value": "15"
     },
     {
       "PowerHint": "LAUNCH",
@@ -423,13 +407,7 @@
       "PowerHint": "LAUNCH",
       "Node": "GPUBlockBoost",
       "Duration": 2000,
-      "Value": "70"
-    },
-    {
-      "PowerHint": "LAUNCH",
-      "Node": "SchedBoost",
-      "Duration": 2000,
-      "Value": "1"
+      "Value": "80"
     },
     {
       "PowerHint": "LAUNCH",
@@ -508,12 +486,6 @@
       "Node": "GPUBlockBoost",
       "Duration": 0,
       "Value": "70"
-    },
-    {
-      "PowerHint": "EXPENSIVE_RENDERING",
-      "Node": "SchedBoost",
-      "Duration": 0,
-      "Value": "1"
     },
     {
       "PowerHint": "EXPENSIVE_RENDERING",
