@@ -116,6 +116,36 @@ on property:sys.boot_completed=1
     chmod 0664 /proc/ppm/policy/cluster_1_max_freq
     chmod 0664 /proc/ppm/policy/cluster_1_min_freq
 
+     # Uclamp
+    write /dev/cpuctl/foreground/cpu.uclamp.latency_sensitive 1
+    write /dev/cpuctl/foreground/cpu.uclamp.max max
+
+    write /dev/cpuctl/top-app/cpu.uclamp.latency_sensitive 1
+    write /dev/cpuctl/top-app/cpu.uclamp.max max
+
+    write /dev/cpuctl/camera-daemon/cpu.uclamp.latency_sensitive 1
+    write /dev/cpuctl/camera-daemon/cpu.uclamp.max max
+
+    # SurfaceFlinger
+    write /dev/cpuctl/system/cpu.uclamp.min 128
+    write /dev/cpuctl/system/cpu.uclamp.max 768
+
+    # Memory
+    write /proc/sys/vm/watermark_scale_factor 10
+
+    # GED
+    write /sys/module/ged/parameters/ged_smart_boost 1
+
+    # Kernel logging
+    write /proc/sys/kernel/printk_devkmsg off
+
+    # Storage
+    write /sys/block/sda/queue/read_ahead_kb 512
+    write /sys/block/sdb/queue/read_ahead_kb 512
+
+    write /sys/block/sda/queue/iostats 0
+    write /sys/block/sdb/queue/iostats 0
+
 service vendor.gralloc-4-0 /vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek
     class hal animation
     interface android.hardware.graphics.allocator@4.0::IAllocator default
