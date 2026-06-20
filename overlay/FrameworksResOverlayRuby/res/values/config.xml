@@ -657,4 +657,28 @@
     <!-- Whether WM DisplayContent supports high performance transitions
          (lower-end devices may want to disable) -->
     <bool name="config_deviceSupportsHighPerfTransitions">false</bool>
+
+  <bool name="config_mediaControlsTurbulenceByDefault">false</bool>
+
+    <!-- Flag indicating whether the surface flinger is inefficient
+         at performing a blur.  Used by parts of the UI to turn off
+         the blur effect where it isn't worth the performance hit.
+         As of Honeycomb, blurring is not supported anymore. -->
+    <bool name="config_sf_slowBlur">false</bool>
+
+    <string-array name="config_deviceDisabledComponents" translatable="false">
+       <item>com.google.android.gms/com.google.android.gms.nearby.discovery.service.DiscoveryService</item>
+       <item>com.google.android.gms/com.google.android.gms.nearby.messages.service.NearbyMessagesService</item>
+       <item>com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver</item>
+       <item>com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver</item>
+    </string-array>
+
+    <!-- The list of package IDs that are allowed to skip camera high frame rate checks. -->
+    <string-array name="config_cameraHFRPrivAppList" translatable="false">
+        <item>com.android.camera</item>
+    </string-array>
+
+    <!-- If not empty, sets the AVC codec profile level used for the internal screen recorder.
+         Possible values: 3, 3.1, 3.2, 4, 4.1, 4.2 -->
+    <string name="config_screenRecorderAVCProfileLevel" translatable="false">3.1</string>
 </resources>
