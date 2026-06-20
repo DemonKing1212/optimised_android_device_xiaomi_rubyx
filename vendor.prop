@@ -152,7 +152,6 @@ ro.vendor.audio.dolby.dax.support=true
 persist.cust.tel.eons=1
 persist.vendor.log.tel_log_ctrl=0
 ro.vendor.mtk_log_hide_gps=1
-ro.config.hw_power_saving=true
 persist.vendor.mtk.aee.filter=0
 persist.vendor.mtk.aee.mode=4
 ro.vendor.aee.enforcing=no
@@ -210,8 +209,12 @@ ro.vendor.mtk_nn_support=1
 
 # Power
 vendor.powerhal.interaction.min=30
-vendor.powerhal.interaction.max=200
+vendor.powerhal.interaction.max=650
 vendor.powerhal.interaction.offset=0
+
+ro.vendor.perf.framepacing.enable=1
+debug.hwui.use_buffer_age=true
+debug.hwui.use_hint_manager=true
 
 # Radio
 persist.radio.multisim.config=dsds
